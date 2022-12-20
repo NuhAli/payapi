@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import React from 'react'
 import { LogoImage } from './styles'
@@ -10,7 +11,7 @@ interface BrandLogoProps {
 const BrandLogo = ({src,alt}:BrandLogoProps) => {
   return (
     <LogoImage>
-        <Image src={src} alt={alt} fill/>
+        <img src={src} alt={alt} />
     </LogoImage>
   )
 }

@@ -20,6 +20,7 @@ export const SectionWrapper = styled.div`
   align-items: center;
 
   @media screen and (min-width: 1440px) {
+    max-width: 1110px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

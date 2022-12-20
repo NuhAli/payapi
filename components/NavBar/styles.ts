@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 import { SidebarButton } from "../SideBar/styles";
+import Link from "next/link";
 
 export const NavigationBar = styled.nav`
   position: absolute;
@@ -49,7 +50,7 @@ export const MenuLinks = styled.ul`
   }
 `;
 
-export const MenuLink = styled.li`
+export const MenuLink = styled(Link)`
   color: #36536b;
   opacity: 0.7;
   font-size: 15px;
