@@ -13,7 +13,7 @@ import TeamInformation from "../TeamInformation";
 const InformationBlock = () => {
   const windowWidth = typeof window !== "undefined" && window.innerWidth;
   const [width, setWidth] = useState(windowWidth);
-  const [image, setImage] = useState("");
+  const [image, setImage] = useState("/assets/about/mobile/image-team-members.jpg");
 
   useEffect(() => {
     renderBackground();
@@ -59,7 +59,7 @@ const InformationBlock = () => {
       <InformationSectionWrapper>
         {renderCard(1)}
         <ImageContainer>
-          <Image src={image} alt={"team members"} fill/>
+          <Image src={image} alt={"team members"} fill quality={100}/>
         </ImageContainer>
         <TeamInformation numberOfTeam={teamData.numberOfTeam} officeNumber={teamData.officeNumber} transactionNumber={teamData.transactionNumber} />
         {renderCard(2)}

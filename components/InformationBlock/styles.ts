@@ -19,8 +19,18 @@ export const InformationSectionWrapper = styled.div`
 `
 
 export const ImageContainer = styled.div`
-    width: 100vw;
+    width: 1440px;
+    max-width: 100vw;
     height: 300px;
     display: block;
     position: relative;
+    object-fit: cover;
+
+    @media screen and (min-width: 1024px) {
+        height: 267px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        height: 500px;
+    }
 `

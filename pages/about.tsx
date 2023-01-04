@@ -123,6 +123,7 @@ const About = () => {
           alt={"circle"}
           fill
           priority={true}
+          quality={100}
         />
       </ImageContainer>
       <Spacer />

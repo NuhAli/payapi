@@ -14,17 +14,39 @@ export const TeamInformationSection = styled.section`
     padding-top: 1rem;
     border-top: 1px solid #36536b;
     opacity: 0.25;
+    @media screen and (min-width: 768px) {
+      border: none;
+    }
   }
 
   &:last-child {
     border-bottom: 1px solid #36536b;
     opacity: 0.25;
     padding-top: 1rem;
+    @media screen and (min-width: 768px) {
+      border: none;
+    }
   }
 
   @media screen and (min-width: 768px) {
+    max-width: 1100px;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 64px;
+  }
+`;
+
+export const InformationWrapper = styled.div`
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    width: 223px;
+    height: 134px;
+    border-top: 1px solid rgba(54, 83, 107,0.25);
+    border-bottom: 1px solid rgba(54, 83, 107,0.25);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 350px;
   }
 `;
 
@@ -51,9 +73,9 @@ export const InformationDescription = styled.p`
   vertical-align: top
   text-align: center;
   color: #ba4270;
-
   @media screen and (min-width: 768px) {
-    border-bottom: 1px solid #36536b;
+    position: relative;
+    top: 40px;
   }
 `;
 

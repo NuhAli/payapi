@@ -3,6 +3,7 @@ import {
   Border,
   InformationDescription,
   InformationTitle,
+  InformationWrapper,
   TeamInformationSection,
 } from "./styles";
 
@@ -31,24 +32,30 @@ const TeamInformation = ({
   return (
     <TeamInformationSection>
       <Border />
-      <InformationTitle className={publicSans.className}>
-        Team Members
-      </InformationTitle>
-      <InformationDescription className={dm.className}>
-        {numberOfTeam}
-      </InformationDescription>
-      <InformationTitle className={publicSans.className}>
-        Offices in the US
-      </InformationTitle>
-      <InformationDescription className={dm.className}>
-        {officeNumber}
-      </InformationDescription>
-      <InformationTitle className={publicSans.className}>
-        Transactions analyzed
-      </InformationTitle>
-      <InformationDescription className={dm.className}>
-        {transactionNumber}
-      </InformationDescription>
+      <InformationWrapper>
+        <InformationTitle className={publicSans.className}>
+          Team Members
+        </InformationTitle>
+        <InformationDescription className={dm.className}>
+          {numberOfTeam}
+        </InformationDescription>
+      </InformationWrapper>
+      <InformationWrapper>
+        <InformationTitle className={publicSans.className}>
+          Offices in the US
+        </InformationTitle>
+        <InformationDescription className={dm.className}>
+          {officeNumber}
+        </InformationDescription>
+      </InformationWrapper>
+      <InformationWrapper>
+        <InformationTitle className={publicSans.className}>
+          Transactions analyzed
+        </InformationTitle>
+        <InformationDescription className={dm.className}>
+          {transactionNumber}
+        </InformationDescription>
+      </InformationWrapper>
       <Border />
     </TeamInformationSection>
   );
